@@ -6,34 +6,82 @@
 	<meta name="description" content="apartments"/>
 	<meta name="author" content="Denis Hmorinski and Tin Valinčić"/>
 	<meta name="keywords" content="smještaj, apartman, soba, hotel"/>
-	<link href="loncar_style.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="loncar_style.css" type="text/css"/>
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 	<title>Apartmani-Lončar</title>
 </head>
 
 <body>
+	<h1 id="banner_tekst">Apartmani Lončar <br/> Stara Novalja</h1>
 	<div id="navigation" class="nav">
-		<p id="lang">HR | <span>ENG</span></p>
+		<p id="lang"><a href="index.html">HR</a> | <span><a href="english.html">ENG</a></span></p>
 		<ul id="menu">
 			<li><a href="#">NASLOVNICA</a></li>&nbsp &nbsp
-			<li><a href="#about">O NAMA</a></li>&nbsp &nbsp
-			<li><a href="#gallery">GALERIJA</a></li>&nbsp &nbsp
+			<li><a href="#anchor_about">O NAMA</a></li>&nbsp &nbsp
+			<li><a href="#anchor_gallery">GALERIJA</a></li>&nbsp &nbsp
 			<li><a href="#availability">DOSTUPNOST</a></li>&nbsp &nbsp
 			<li><a href="#distances">UDALJENOSTI</a></li>&nbsp &nbsp
 			<li><a href="#contact">KONTAKT</a></li>
 	</div>
+	<div id="anchor_about"></div>
 	<div id="about">
 		<img name="icon_about" src="img/icon_about.png" alt="About"/>
 		<h1>O NAMA</h1>
 		<p>Apartmani Lončar se nalaze u Staroj Novalji, malom turističkom selu u blizini grada Novalje, poznatoj turističkoj lokaciji. Smješteni su na katu obiteljske kuće, što je garancija tople dobrodošlice i atmosfere, te ugodno provedenih praznika. Manji apartman je najpogodniji za 2 osobe + malo dijete, uključuje boravak spojen sa opremljenom kuhinjom, kupaonu te terasu.  Veći apartman prima 3-4 osobe, sastoji se od boravka spojenog sa kuhinjom, kupaone, spavaće sobe te terase. Oba apartmana imaju televizor i klimu. Osim toga, gostima je omogućeno korištenje ljetne kuhinje u dvorištu kuće, te roštilja, a imaju i pristup internetu. Ukoliko ste zainteresirani za obilazak zaljeva Stare Novalje, vlasnik će Vas rado odvesti u brodski obilazak, te Vam ponuditi prijevoz do neke od udaljenijih i napuštenih plaža, do kojih je moguće doći samo pomoću čamca. Apartmani su smješteni na veoma pogodnoj lokaciji, s obzirom na to da je do plaže potrebno svega dvije minute hoda, dok Vam je do poznate plaže Zrće potrebno svega 7 minuta vožnje autom. Tako apartmani Lončar pružaju ujedno i mirnu rezidenciju ukoliko ste došli na odmor sa svojom obitelji, ali isto tako i blizinu svih party destinacija ukoliko ste mladi ljudi željni zabave. Ima li poželjnijeg mjesta za biti? Cijena noćenja za manji apartman iznosi 45 eura, dok je cijena noćenja za veći apartman 55 eura.</p>
+		<img class="img_about_left" name="limun" src="img/limun.jpg" alt="Limun"/>
+		<img class="img_about" name="dvoriste_1" src="img/dvoriste_1.jpg" alt="Dvoriste 2"/>
+		<img class="img_about_right" name="dvoriste_2" src="img/dvoriste_2.jpg" alt="Dvoriste 2"/>
 	</div>
 	
+	<div id="anchor_gallery"></div>
 	<div id="gallery">
-		<img name="icon_gallery" src="img/icon_gallery.png" alt="gallery"/>
+		<img id="icon_gallery"name="icon_gallery" src="img/icon_gallery.png" alt="gallery"/>
 		<h1>GALERIJA</h1>
+		<ul id="gallery_nav">
+			<li>SVI</li>
+			<li>MALI APARTMANI</li>
+			<li>VELIKI APARTMANI</li>
+			<li>DVORIŠTE</li>
+			<li>STARA NOVALJA/NOVALJA</li>
+		</ul>
+		<a id="single_1" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+			<img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+		</a>
+		<a id="single_2" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
+			<img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
+		</a>
+		<a id="single_3" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+			<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+		</a>
+		<a id="single_4" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+			<img src="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg" alt="" />
+		</a>
+		<a class="fancybox" rel="group" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg"><img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" alt="" /></a>
+		<a class="fancybox" rel="group" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg"><img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" alt="" /></a>
+		<a class="fancybox" rel="group" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg"><img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" /></a>
+		<a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg"><img src="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg" alt="" /></a>
 		
-	</div>
-
-	<script src="loncar.js" type="text/javascript"></script>
+	
 </body>
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="/fancybox/lib/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="/fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>	
+	<script src="loncar.js" type="text/javascript"></script>
+	
 
 </html>

@@ -4,25 +4,41 @@
 }
 body {
 	font-family: lato;
-	background: url('img/banner.jpg');
+	background: url('img/banner.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
+}
+
+#banner_tekst {
+	text-align: center;
+	font-size: 60px;
+	font-family: Arial;
+	margin-top: 20%;
+	color: #fff;
 }
 
 /* navigacija */
 
 #navigation {
-	margin-left: -8px;
-	margin-right: -8px;
-	margin-top: -8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 50px;
-	background: white;
+	background: #000;
 	text-align: center;
 }
+
 #lang {
 	float: left;
 	margin-left: 20px;
+	color: #fff;
 }
+
+#lang a{
+	color: #ccc;
+}
+
 #menu {
 	float: right;
 	margin-right: 20px;
@@ -30,14 +46,28 @@ body {
 #menu li {
 	display: inline;
 }
-#menu a {
-	text-decoration: none;
-	color: black;
+#menu li a{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: -13px;
 }
-#menu a:hover {
-	color: #518dc7;
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	background: #629ed8;
 }
 
+a:focus{
+	background: #518dc7;
+}
+
+#about_active a:target{
+	background: #518dc8;
+}
 /* about */
 
 #about, #gallery {
@@ -45,17 +75,21 @@ body {
 	margin-right: -8px;
 	padding-left: 90px;
 	padding-right: 90px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	text-align: center;
 }
 #about h1 {
 	font-size: 36px;
 	color: #518dc7;
 }
+#anchor_about {
+	margin-top: 15%;
+}
+
 #about {
-	background: white;
-	margin-top: 45%;
+	background: #fff;
+	margin-top: 18%;
 }
 
 #about p {
@@ -63,7 +97,16 @@ body {
 	color: #abaaaa;
 	line-height: 2;
 }
-
+.img_about, .img_about_left, .img_about_right {
+	width: 30%;
+	padding-top: 20px;
+}
+.img_about_left {
+	float: left;
+}
+.img_about_right{
+	float: right;
+}
 /* gallery */
 
 #gallery {
@@ -71,5 +114,17 @@ body {
 }
 #gallery h1 {
 	font-size: 36px;
+	color: white;
+}
+#gallery_nav li {
+	display: inline;
+	color: #abaaaa;
+	font-size: 16px;
+	margin-left: 10px;
+}
+#gallery_nav li:hover {
+	color: white;
+}
+#gallery_nav li:active {
 	color: white;
 }
