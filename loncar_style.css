@@ -112,6 +112,12 @@ a:focus{
 #gallery {
 	background: #518dc7;
 }
+
+#gallery img {
+	margin: 4px;
+	border: 1px solid white;
+}
+
 #gallery h1 {
 	font-size: 36px;
 	color: white;

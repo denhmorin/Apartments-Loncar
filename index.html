@@ -12,6 +12,48 @@
 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 	<title>Apartmani-Lončar</title>
+	
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -31,9 +73,9 @@
 		<img name="icon_about" src="img/icon_about.png" alt="About"/>
 		<h1>O NAMA</h1>
 		<p>Apartmani Lončar se nalaze u Staroj Novalji, malom turističkom selu u blizini grada Novalje, poznatoj turističkoj lokaciji. Smješteni su na katu obiteljske kuće, što je garancija tople dobrodošlice i atmosfere, te ugodno provedenih praznika. Manji apartman je najpogodniji za 2 osobe + malo dijete, uključuje boravak spojen sa opremljenom kuhinjom, kupaonu te terasu.  Veći apartman prima 3-4 osobe, sastoji se od boravka spojenog sa kuhinjom, kupaone, spavaće sobe te terase. Oba apartmana imaju televizor i klimu. Osim toga, gostima je omogućeno korištenje ljetne kuhinje u dvorištu kuće, te roštilja, a imaju i pristup internetu. Ukoliko ste zainteresirani za obilazak zaljeva Stare Novalje, vlasnik će Vas rado odvesti u brodski obilazak, te Vam ponuditi prijevoz do neke od udaljenijih i napuštenih plaža, do kojih je moguće doći samo pomoću čamca. Apartmani su smješteni na veoma pogodnoj lokaciji, s obzirom na to da je do plaže potrebno svega dvije minute hoda, dok Vam je do poznate plaže Zrće potrebno svega 7 minuta vožnje autom. Tako apartmani Lončar pružaju ujedno i mirnu rezidenciju ukoliko ste došli na odmor sa svojom obitelji, ali isto tako i blizinu svih party destinacija ukoliko ste mladi ljudi željni zabave. Ima li poželjnijeg mjesta za biti? Cijena noćenja za manji apartman iznosi 45 eura, dok je cijena noćenja za veći apartman 55 eura.</p>
-		<img class="img_about_left" name="limun" src="img/limun.jpg" alt="Limun"/>
-		<img class="img_about" name="dvoriste_1" src="img/dvoriste_1.jpg" alt="Dvoriste 2"/>
-		<img class="img_about_right" name="dvoriste_2" src="img/dvoriste_2.jpg" alt="Dvoriste 2"/>
+		<img class="img_about_left" name="limun" src="img/velike_slike/11.jpg" alt="Limun"/>
+		<img class="img_about" name="dvoriste_1" src="img/velike_slike/5.jpg" alt="Dvoriste 2"/>
+		<img class="img_about_right" name="dvoriste_2" src="img/velike_slike/7.jpg" alt="Dvoriste 2"/>
 	</div>
 	
 	<div id="anchor_gallery"></div>
@@ -47,40 +89,28 @@
 			<li>DVORIŠTE</li>
 			<li>STARA NOVALJA/NOVALJA</li>
 		</ul>
-		<a id="single_1" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
-			<img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
-		</a>
-		<a id="single_2" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
-			<img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
-		</a>
-		<a id="single_3" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
-			<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
-		</a>
-		<a id="single_4" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
-			<img src="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg" alt="" />
-		</a>
-		<a class="fancybox" rel="group" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg"><img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" alt="" /></a>
-		<a class="fancybox" rel="group" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg"><img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" alt="" /></a>
-		<a class="fancybox" rel="group" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg"><img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" /></a>
-		<a class="fancybox" rel="group" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg"><img src="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_m.jpg" alt="" /></a>
-		
-	
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/1.jpg"><img src="img/thumbns/1.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/2.jpg"><img src="img/thumbns/2.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/3.jpg"><img src="img/thumbns/3.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/4.jpg"><img src="img/thumbns/4.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/5.jpg"><img src="img/thumbns/5.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/6.jpg"><img src="img/thumbns/6.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/7.jpg"><img src="img/thumbns/7.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/8.jpg"><img src="img/thumbns/8.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/9.jpg"><img src="img/thumbns/9.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/10.jpg"><img src="img/thumbns/10.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/11.jpg"><img src="img/thumbns/11.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/12.jpg"><img src="img/thumbns/12.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/13.jpg"><img src="img/thumbns/13.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/14.jpg"><img src="img/thumbns/14.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/15.jpg"><img src="img/thumbns/15.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/16.jpg"><img src="img/thumbns/16.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/17.jpg"><img src="img/thumbns/17.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/18.jpg"><img src="img/thumbns/18.jpg" alt="" /></a>
+		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/19.jpg"><img src="img/thumbns/19.jpg" alt="" /></a>
 </body>
-	<!-- Add jQuery library -->
-	<script type="text/javascript" src="/fancybox/lib/jquery-1.9.0.min.js"></script>
-	<script type="text/javascript" src="/fancybox/lib/jquery-1.10.1.min.js"></script>
-
-	<!-- Add mousewheel plugin (this is optional) -->
-	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-
-	<!-- Add fancyBox -->
-	<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-	<!-- Optionally add helpers - button, thumbnail and/or media -->
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>	
+	
+	
 	<script src="loncar.js" type="text/javascript"></script>
 	
 
