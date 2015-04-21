@@ -6,11 +6,11 @@
 	<meta name="description" content="apartments"/>
 	<meta name="author" content="Denis Hmorinski and Tin Valinčić"/>
 	<meta name="keywords" content="smještaj, apartman, soba, hotel"/>
-	<link rel="stylesheet" href="loncar_style.css" type="text/css"/>
 	<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="loncar_style.css" type="text/css"/>
 	<title>Apartmani-Lončar</title>
 	
 	<!-- Add jQuery library -->
@@ -38,8 +38,8 @@
 			 */
 
 			$('.fancybox-thumbs').fancybox({
-				prevEffect : 'none',
-				nextEffect : 'none',
+				prevEffect : 'slide',
+				nextEffect : 'slide',
 
 				closeBtn  : false,
 				arrows    : false,
@@ -73,7 +73,7 @@
 		<img name="icon_about" src="img/icon_about.png" alt="About"/>
 		<h1>O NAMA</h1>
 		<p>Apartmani Lončar se nalaze u Staroj Novalji, malom turističkom selu u blizini grada Novalje, poznatoj turističkoj lokaciji. Smješteni su na katu obiteljske kuće, što je garancija tople dobrodošlice i atmosfere, te ugodno provedenih praznika. Manji apartman je najpogodniji za 2 osobe + malo dijete, uključuje boravak spojen sa opremljenom kuhinjom, kupaonu te terasu.  Veći apartman prima 3-4 osobe, sastoji se od boravka spojenog sa kuhinjom, kupaone, spavaće sobe te terase. Oba apartmana imaju televizor i klimu. Osim toga, gostima je omogućeno korištenje ljetne kuhinje u dvorištu kuće, te roštilja, a imaju i pristup internetu. Ukoliko ste zainteresirani za obilazak zaljeva Stare Novalje, vlasnik će Vas rado odvesti u brodski obilazak, te Vam ponuditi prijevoz do neke od udaljenijih i napuštenih plaža, do kojih je moguće doći samo pomoću čamca. Apartmani su smješteni na veoma pogodnoj lokaciji, s obzirom na to da je do plaže potrebno svega dvije minute hoda, dok Vam je do poznate plaže Zrće potrebno svega 7 minuta vožnje autom. Tako apartmani Lončar pružaju ujedno i mirnu rezidenciju ukoliko ste došli na odmor sa svojom obitelji, ali isto tako i blizinu svih party destinacija ukoliko ste mladi ljudi željni zabave. Ima li poželjnijeg mjesta za biti? Cijena noćenja za manji apartman iznosi 45 eura, dok je cijena noćenja za veći apartman 55 eura.</p>
-		<img class="img_about_left" name="limun" src="img/velike_slike/11.jpg" alt="Limun"/>
+		<img class="img_about_left" name="limun" src="img/velike_slike/11.jpg" alt="Limun" title="Limun"/>
 		<img class="img_about" name="dvoriste_1" src="img/velike_slike/5.jpg" alt="Dvoriste 2"/>
 		<img class="img_about_right" name="dvoriste_2" src="img/velike_slike/7.jpg" alt="Dvoriste 2"/>
 	</div>
@@ -83,31 +83,98 @@
 		<img id="icon_gallery"name="icon_gallery" src="img/icon_gallery.png" alt="gallery"/>
 		<h1>GALERIJA</h1>
 		<ul id="gallery_nav">
-			<li>SVI</li>
-			<li>MALI APARTMANI</li>
-			<li>VELIKI APARTMANI</li>
-			<li>DVORIŠTE</li>
-			<li>STARA NOVALJA/NOVALJA</li>
+			<li class="active" id="klik_svi" style="cursor:pointer" onclick="sakrij()">SVI</li>
+			<li id="klik_mali" style="cursor:pointer" onclick="sakrij()">MALI APARTMANI</li>
+			<li id="klik_veliki" style="cursor:pointer" onclick="sakrij()">VELIKI APARTMANI</li>
+			<li id="klik_dvoriste" style="cursor:pointer" onclick="sakrij()">DVORIŠTE</li>
+			<li id="klik_novalja" style="cursor:pointer" onclick="sakrij()">STARA NOVALJA/NOVALJA</li>
 		</ul>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/1.jpg"><img src="img/thumbns/1.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/2.jpg"><img src="img/thumbns/2.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/3.jpg"><img src="img/thumbns/3.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/4.jpg"><img src="img/thumbns/4.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/5.jpg"><img src="img/thumbns/5.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/6.jpg"><img src="img/thumbns/6.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/7.jpg"><img src="img/thumbns/7.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/8.jpg"><img src="img/thumbns/8.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/9.jpg"><img src="img/thumbns/9.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/10.jpg"><img src="img/thumbns/10.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/11.jpg"><img src="img/thumbns/11.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/12.jpg"><img src="img/thumbns/12.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/13.jpg"><img src="img/thumbns/13.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/14.jpg"><img src="img/thumbns/14.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/15.jpg"><img src="img/thumbns/15.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/16.jpg"><img src="img/thumbns/16.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/17.jpg"><img src="img/thumbns/17.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/18.jpg"><img src="img/thumbns/18.jpg" alt="" /></a>
-		<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/19.jpg"><img src="img/thumbns/19.jpg" alt="" /></a>
+		<div class ="images_gallery">
+			<div id="slike_svi">
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/1.jpg"><img src="img/thumbns/1.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/2.jpg"><img src="img/thumbns/2.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/3.jpg"><img src="img/thumbns/3.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/4.jpg"><img src="img/thumbns/4.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/5.jpg"><img src="img/thumbns/5.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/6.jpg"><img src="img/thumbns/6.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/7.jpg"><img src="img/thumbns/7.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/8.jpg"><img src="img/thumbns/8.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/9.jpg"><img src="img/thumbns/9.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/10.jpg"><img src="img/thumbns/10.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/11.jpg"><img src="img/thumbns/11.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/12.jpg"><img src="img/thumbns/12.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/13.jpg"><img src="img/thumbns/13.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/14.jpg"><img src="img/thumbns/14.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/15.jpg"><img src="img/thumbns/15.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/16.jpg"><img src="img/thumbns/16.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/17.jpg"><img src="img/thumbns/17.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/18.jpg"><img src="img/thumbns/18.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/19.jpg"><img src="img/thumbns/19.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/20.jpg"><img src="img/thumbns/20.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/21.jpg"><img src="img/thumbns/21.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/22.jpg"><img src="img/thumbns/22.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/23.jpg"><img src="img/thumbns/23.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/24.jpg"><img src="img/thumbns/24.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/25.jpg"><img src="img/thumbns/25.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/26.jpg"><img src="img/thumbns/26.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/27.jpg"><img src="img/thumbns/27.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/28.jpg"><img src="img/thumbns/28.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/29.jpg"><img src="img/thumbns/29.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/30.jpg"><img src="img/thumbns/30.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/31.jpg"><img src="img/thumbns/31.jpg" alt="" /></a>
+			</div>
+			<div id="slike_mali">
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/1.jpg"><img src="img/thumbns/1.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/2.jpg"><img src="img/thumbns/2.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/3.jpg"><img src="img/thumbns/3.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/4.jpg"><img src="img/thumbns/4.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/5.jpg"><img src="img/thumbns/5.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/6.jpg"><img src="img/thumbns/6.jpg" alt="" /></a>
+			</div>
+			<div id="slike_veliki">
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/7.jpg"><img src="img/thumbns/7.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/8.jpg"><img src="img/thumbns/8.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/9.jpg"><img src="img/thumbns/9.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/10.jpg"><img src="img/thumbns/10.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/16.jpg"><img src="img/thumbns/16.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/17.jpg"><img src="img/thumbns/17.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/18.jpg"><img src="img/thumbns/18.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/19.jpg"><img src="img/thumbns/19.jpg" alt="" /></a>
+			</div>
+			<div id="slike_dvoriste">
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/11.jpg"><img src="img/thumbns/11.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/12.jpg"><img src="img/thumbns/12.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/13.jpg"><img src="img/thumbns/13.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/14.jpg"><img src="img/thumbns/14.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/15.jpg"><img src="img/thumbns/15.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/16.jpg"><img src="img/thumbns/16.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/17.jpg"><img src="img/thumbns/17.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/18.jpg"><img src="img/thumbns/18.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/19.jpg"><img src="img/thumbns/19.jpg" alt="" /></a>
+			</div>
+			<div id="slike_novalja">
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/20.jpg"><img src="img/thumbns/20.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/21.jpg"><img src="img/thumbns/21.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/22.jpg"><img src="img/thumbns/22.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/23.jpg"><img src="img/thumbns/23.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/24.jpg"><img src="img/thumbns/24.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/25.jpg"><img src="img/thumbns/25.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/26.jpg"><img src="img/thumbns/26.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/27.jpg"><img src="img/thumbns/27.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/28.jpg"><img src="img/thumbns/28.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/29.jpg"><img src="img/thumbns/29.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/30.jpg"><img src="img/thumbns/30.jpg" alt="" /></a>
+				<a class="fancybox-thumbs" data-fancybox-group="thumb" href="img/velike_slike/31.jpg"><img src="img/thumbns/31.jpg" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="availability">
+		<img id="icon_availability"name="icon_availability" src="img/icon_availability.png" alt="availability"/>
+		<h1>AVAILABILITY</h1>
+		<iframe src="https://www.google.com/calendar/embed?title=Mali%20apartman%20(45%24%20po%20danu)&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=iloncarstn%40gmail.com&amp;color=%23A32929&amp;ctz=Europe%2FBelgrade" style=" border-width:0 " width="500" height="300" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
 </body>
 	
 	

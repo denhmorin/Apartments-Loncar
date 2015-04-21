@@ -70,7 +70,7 @@ a:focus{
 }
 /* about */
 
-#about, #gallery {
+#about, #gallery, #availability {
 	margin-left: -8px;
 	margin-right: -8px;
 	padding-left: 90px;
@@ -79,7 +79,7 @@ a:focus{
 	padding-bottom: 40px;
 	text-align: center;
 }
-#about h1 {
+#about h1, #availability h1 {
 	font-size: 36px;
 	color: #518dc7;
 }
@@ -111,11 +111,29 @@ a:focus{
 
 #gallery {
 	background: #518dc7;
+	min-height: 600px;
 }
 
-#gallery img {
+#slike_mali {
+	display: none;
+}
+#slike_veliki {
+	display: none;
+}
+#slike_dvoriste {
+	display: none;
+}
+#slike_novalja {
+	display: none;
+}
+
+#gallery .images_gallery img {
 	margin: 4px;
-	border: 1px solid white;
+	opacity: 0.8;
+}
+
+#gallery .images_gallery img:hover {
+	opacity: 1;
 }
 
 #gallery h1 {
@@ -131,6 +149,9 @@ a:focus{
 #gallery_nav li:hover {
 	color: white;
 }
-#gallery_nav li:active {
+#gallery_nav li.active {
 	color: white;
+}
+.fancybox-skin {
+	padding: 0px;
 }
